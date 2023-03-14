@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ebg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is Java"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:id="@+id/text_book_chapterName"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/text_book_chapterName">
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/text_book_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+    </ScrollView>
+
+</RelativeLayout>
